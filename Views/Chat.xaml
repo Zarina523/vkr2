@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project2.Views.Chat">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="NavigationButtonContainerStyle" TargetType="Grid">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="Margin" Value="24, 12"/>
+            </Style>
+            <Style x:Key="ContentContainerStyle" TargetType="Grid">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                
+                <Setter Property="Margin" Value="24, 12"/>
+            </Style>
+            
+            <Style x:Key="UsernameTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#F0FFFF"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontFamily" Value="Metropolis Regular"/>
+                <Setter Property="Margin" Value="12, 28"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="MessageTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="FontFamily" Value="Metropolis Regular"/>
+                
+            </Style>
+            
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid BackgroundColor="{StaticResource Primary}" VerticalOptions="Start">
+            <!--CONTENT-->
+            <Grid
+            BackgroundColor="#F0FFFF">
+                <Grid BackgroundColor="#96d1ff"
+                Grid.Row="0"
+                VerticalOptions="Start">
+                    <Label 
+                    Text="Dr. Richter"
+                    Style="{StaticResource UsernameTextStyle}"/>
+                </Grid>
+                <Grid  Grid.Row="2" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Margin="2">
+                    <Rectangle Fill="#96d1ff" HeightRequest="12" RadiusX="12" RadiusY="20"/>
+                    <Frame BorderColor="{StaticResource Primary}" HasShadow="True" CornerRadius="12">
+                        <Label
+                            Text="Здравствуйте!"
+                            Margin="2"
+                            Style="{StaticResource MessageTextStyle}"/>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="3" HorizontalOptions="StartAndExpand" VerticalOptions="Start" Margin="2">
+                    <Rectangle Fill="White" HeightRequest="12" RadiusX="12" RadiusY="20"/>
+                    <Frame BorderColor="{StaticResource Primary}" HasShadow="True" CornerRadius="12">
+                        <Label
+                            Text="Добрый день, чем я могу Вам помочь?"
+                            Style="{StaticResource MessageTextStyle}"
+                            Margin="2"/>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="4" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Margin="2">
+                    <Rectangle Fill="#96d1ff" HeightRequest="12" RadiusX="12" RadiusY="20"/>
+                    <Frame BorderColor="{StaticResource Primary}" HasShadow="True" CornerRadius="12">
+                        <Label
+                            Text="Я хотел бы проконсульитроваться по поводу дальнейшего лечения"
+                            Style="{StaticResource MessageTextStyle}"
+                            Margin="2"/>
+                    </Frame>
+                </Grid>
+                <Grid  Grid.Row="5" HorizontalOptions="StartAndExpand" VerticalOptions="Start" Margin="2">
+                    <Rectangle Fill="white" HeightRequest="12" RadiusX="12" RadiusY="20"/>
+                    <Frame BorderColor="{StaticResource Primary}" HasShadow="True" CornerRadius="12">
+                        <Label
+                            Text="Сейчас я пришлю список рекомендаций для Вас"
+                            Style="{StaticResource MessageTextStyle}"
+                            Margin="2"/>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="6" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Margin="2">
+                    <Rectangle Fill="#96d1ff" HeightRequest="12" RadiusX="12" RadiusY="20"/>
+                    <Frame BorderColor="{StaticResource Primary}" HasShadow="True" CornerRadius="12">
+                        <Label
+                            Text="Спасибо, буду ждать!"
+                            Style="{StaticResource MessageTextStyle}"
+                            Margin="2"/>
+                    </Frame>
+                </Grid>
+
+                <Grid Grid.Row="7" HorizontalOptions="StartAndExpand" VerticalOptions="End" Margin="2">
+                    
+                    <Entry x:Name="titleField" Placeholder="Введите сообщение" HeightRequest="32" WidthRequest="560" />
+                        
+                </Grid>
+                <Grid Grid.Row="7" HorizontalOptions="EndAndExpand" VerticalOptions="End" Margin="2">
+                    <Button Text="Отправить" Clicked="Button_Clicked"></Button>
+                
+                </Grid>
+            </Grid>
+        
+        
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

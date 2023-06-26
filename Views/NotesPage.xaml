@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project2.Views.NotesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Margin="3" x:Name="titleField" Placeholder="Введите дату"/>
+            <Editor Margin="3" x:Name="descField" Placeholder="Опишите Ваше самочувтсиве" HeightRequest="180"/>
+            <Entry Margin="3" x:Name="imageField" Placeholder="Введите показатели артериального давления"/>
+            <Entry Margin="3" x:Name="priceField" Placeholder="Введите показатель пульса"/>
+            <Button Margin="3" Text="Добавить запись" Clicked="AddItemButton"/>
+
+            <CollectionView x:Name="itemsCollection">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="6" Padding="10">
+                            <Label Text="{Binding Title}" FontAttributes="Bold"/>
+                            <Label Text="{Binding Desc}"/>
+                            <Label Text="{Binding Image}"/>
+                            <Label Text="{Binding Price}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project2.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Выполните вход"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="Large"/>
+            <Entry Placeholder="Enter your email" x:Name="TxtEmail" WidthRequest="450"></Entry>
+            <Entry Placeholder="Enter password" IsPassword="True" x:Name="TxtPassword"></Entry>
+            <Button Text="Войти" x:Name="BtnSignIn" Clicked="BtnSignIn_Clicked" BorderColor="#96d1ff"></Button>
+            <Button Text="Зарегистрироваться" x:Name="BtnSignUp" Clicked="BtnSignUp_Clicked" BackgroundColor="#96d1ff"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

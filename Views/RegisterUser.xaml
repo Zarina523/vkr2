@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project2.Views.RegisterUser">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Регистрация"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="Large"/>
+            <Entry Placeholder="Name"
+                   x:Name="TxtName" WidthRequest="450"></Entry>
+            <Entry Placeholder="Email"
+                   x:Name="TxtEmail"></Entry>
+            <Entry Placeholder="Password"
+                   IsPassword="True"
+                   x:Name="TxtPassword"></Entry>
+            <Entry Placeholder="Retype Password"
+                   IsPassword="True"
+                   x:Name="TxtConfirmPassword"></Entry>
+            <Button Text="Зарегистрироваться" x:Name="ButtonRegister"
+                   Clicked="ButtonRegister_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

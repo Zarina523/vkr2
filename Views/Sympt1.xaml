@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project2.Views.Sympt1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Label Margin="10" Text="Замечали ли Вы в последнее время ухудшение зрения?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker x:Name="p1" Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                <Picker.Items>
+                    <x:String>Да</x:String>
+                    <x:String>Нет</x:String>
+                    <x:String>Затрудняюсь ответить</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Margin="10" Text="Замечали ли Вы в последнее время ухудшение памяти?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                <Picker.Items>
+                    <x:String>Да</x:String>
+                    <x:String>Нет</x:String>
+                    <x:String>Затрудняюсь ответить</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Margin="10" Text="Наблюдается ли у Вас отечность/боль в ногах?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                <Picker.Items>
+                    <x:String>Да</x:String>
+                    <x:String>Нет</x:String>
+                    <x:String>Затрудняюсь ответить</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы шум в ушах?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                <Picker.Items>
+                    <x:String>Да</x:String>
+                    <x:String>Нет</x:String>
+                    <x:String>Затрудняюсь ответить</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы чувство сжатия в области сердца?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы давящую боль за грудиной?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы боли в шее/челюсти с левой стороны?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Возникновение одышки даже при небольшой нагрузке?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается ли повышенное холодное потоотделение?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Частое ощущение нехватки воздуха?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы беспричинное беспокойство и тревожность?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается ли головокружение?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы слабость?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы головные боли?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдаются ли у Вас регулярные обмороки?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается повышенное артериальное давление??"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Ощущаете ли Вы онемение пальцев на руках/ногах?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается посинение кончиков пальцев?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается бледность/синюшность кожи?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается медленное сердцебиение?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается учащенное сердцебиение?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается повышенная температура тела?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Margin="10" Text="Наблюдается снижение массы тела?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Picker Title="Выберите ответ" Margin="12" TitleColor="{StaticResource Primary}">
+                    <Picker.Items>
+                        <x:String>Да</x:String>
+                        <x:String>Нет</x:String>
+                        <x:String>Затрудняюсь ответить</x:String>
+                    </Picker.Items>
+                </Picker>
+                
+                <Button Margin="12" Text="Узнать результат" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
